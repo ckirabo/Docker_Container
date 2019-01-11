@@ -3,6 +3,10 @@
 #jenkins
 #to go from jenkins to clare docker exit 
 #to traverse from clareDocker to jenkins docker exec -it jenkins bash
+#install docker git, create group user
+#docker run -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock --name jenkins bobcrutchley/jenkins:latest
+#install maven in the container.
+
 mvn clean install
 sudo docker build -t spring-boot-hello-world:latest .
 sudo docker ps
